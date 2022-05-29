@@ -2,9 +2,9 @@ module.exports = {
   pathPrefix: '/resume',
   siteMetadata: {
     title: '李宗荣简历',
-    githubUrl: 'https://github.com/visiky/resume.git',
-    author: 'visiky',
-    contact: 'https://github.com/visiky',
+    githubUrl: 'https://github.com/tiancai110a/resume.git',
+    author: 'tiancai110a',
+    contact: 'https://github.com/tiancai110a',
   },
   flags: {
     DEV_SSR: false,
