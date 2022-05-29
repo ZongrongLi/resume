@@ -10,8 +10,8 @@ export const RESUME_INFO: ResumeConfig = {
     name: '李宗荣',
     email: '736****86@qq.com',
     mobile: '156********',
-    github: 'https://github.com/visiky',
-    leetcode: 'https://leetcode.com/people/visiky',
+    github: 'https://github.com/tiancai110a',
+    leetcode: 'https://leetcode.com/people/tiancai110a',
     workExpYear: '',
     workPlace: '浙江杭州',
     positionTitle: '前端工程师',
@@ -120,7 +120,7 @@ export const RESUME_INFO: ResumeConfig = {
   workList: [
     // {
     //   work_name: '个人简历生成器',
-    //   visit_link: 'https://visiky.github.io/resume',
+    //   visit_link: 'https://tiancai110a.github.io/resume',
     // },
     // {
     //   work_name: 'AntV 主题生成器',
@@ -144,8 +144,8 @@ export const RESUME_INFO: ResumeConfig = {
         name: 'Xiaojuan Liao',
         email: '736****86@qq.com',
         mobile: '156********',
-        github: 'https://github.com/visiky',
-        leetcode: 'https://leetcode.com/people/visiky',
+        github: 'https://github.com/tiancai110a',
+        leetcode: 'https://leetcode.com/people/tiancai110a',
         workExpYear: '',
       },
       skillList: [
