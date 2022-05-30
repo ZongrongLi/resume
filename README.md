@@ -1,5 +1,8 @@
 # 🧾 李宗荣简历
 
+fork from: https://github.com/visiky/resume
+一顿改   
+部署了一个自己的
 在线简历生成器。无须 fork 仓库，即可在线预览、编辑和下载 PDF 简历。✨ [在线编辑](https://tiancai110a.github.io/resume)
 
 内置 3 套模板，支持**自定义主题颜色**、**自定义模块标题**、**国际化(中/英)** 等.
