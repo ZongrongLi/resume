@@ -176,7 +176,6 @@ export const Template1: React.FC<Props> = props => {
           <section className="section section-education">
             <div className="section-title" style={{ color: theme.color }}>
               {i18n.get('教育背景')}
-           
             </div>
             {educationList.map((education, idx) => {
               const [start, end] = education.edu_time;
@@ -269,7 +268,7 @@ export const Template1: React.FC<Props> = props => {
         {awardList?.length ? (
           <section className="section section-award">
             <div className="section-title" style={{ color: theme.color }}>
-             {i18n.get('更多信息')}
+              {i18n.get('更多信息')}
             </div>
             {awardList.map((award, idx) => {
               return (
@@ -350,9 +349,7 @@ export const Template1: React.FC<Props> = props => {
                       </div>
                       <div className="section-info">
                         <b>{i18n.get('主要工作')}：</b>
-                        <span className="project-content">
-                          {project.project_content}
-                        </span>
+                        <span>{project.project_content}</span>
                       </div>
                     </div>
                   ) : null
