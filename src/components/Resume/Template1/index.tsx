@@ -347,7 +347,7 @@ export const Template1: React.FC<Props> = props => {
                         <b>{i18n.get('项目描述')}：</b>
                         <span>{project.project_desc}</span>
                       </div>
-                      <div className="section-info">
+                      <div className="section-detail">
                         <b>{i18n.get('主要工作')}：</b>
                         <span>{project.project_content}</span>
                       </div>
