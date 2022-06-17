@@ -160,6 +160,13 @@ export const Template1: React.FC<Props> = props => {
             )}
           </div>
         </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
         {/* 自我介绍 */}
         {!!_.trim(_.join(aboutme, '')) && (
           <section className="section section-aboutme">
@@ -171,6 +178,13 @@ export const Template1: React.FC<Props> = props => {
             ))}
           </section>
         )}
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
         {/* 教育背景 */}
         {educationList?.length ? (
           <section className="section section-education">
@@ -224,6 +238,13 @@ export const Template1: React.FC<Props> = props => {
             })}
           </section>
         ) : null}
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
         {/* 专业技能 */}
         {skillList?.length ? (
           <section className="section section-skill">
@@ -264,6 +285,13 @@ export const Template1: React.FC<Props> = props => {
             })}
           </section>
         ) : null}
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
         {/* 更多信息 */}
         {awardList?.length ? (
           <section className="section section-award">

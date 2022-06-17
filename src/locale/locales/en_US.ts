@@ -30,7 +30,7 @@ export const EN_US_LOCALE: Locale = {
   工作经历: 'Work experience',
   项目经历: 'Project experience',
   项目描述: 'Description',
-  主要工作: 'Work',
+  主要工作: 'Main Work',
   至今: 'to present',
   访问链接: 'link',
 
