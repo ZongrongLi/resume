@@ -127,8 +127,8 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
       },
       {
         type: 'input',
-        attributeId: 'workPlace',
-        displayName: i18n.get('工作地'),
+        attributeId: 'linkdin',
+        displayName: i18n.get('领英'),
       },
       {
         type: 'input',
@@ -159,6 +159,11 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
     projectList: [
       {
         type: 'input',
+        attributeId: 'company_name',
+        displayName: i18n.get('公司描述'),
+      },
+      {
+        type: 'input',
         attributeId: 'project_name',
         displayName: i18n.get('项目名称'),
       },
@@ -177,6 +182,12 @@ export const CONTENT_OF_MODULE = ({ i18n }) => {
         type: 'input',
         attributeId: 'project_content',
         displayName: i18n.get('主要工作'),
+        cfg: { autoSize: { minRows: 8 }, showCount: true },
+      },
+      {
+        type: 'input',
+        attributeId: 'technical_line',
+        displayName: i18n.get('技术栈'),
         cfg: { autoSize: { minRows: 8 }, showCount: true },
       },
     ],

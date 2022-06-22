@@ -142,13 +142,13 @@ export const Template3: React.FC<Props> = props => {
                 </span>
               </div>
             )}
-            {profile?.workPlace && (
+            {profile?.linkdin && (
               <div className="work-place">
                 <EnvironmentFilled
                   style={{ color: theme.color, opacity: 0.85 }}
                 />
                 <span>
-                  {i18n.get('工作地')}: {profile.workPlace}
+                  {i18n.get('领英')}: {profile.linkdin}
                 </span>
               </div>
             )}

@@ -17,8 +17,8 @@ export type ResumeConfig = {
     leetcode?: string;
     /** 工作经验 xx 年 */
     workExpYear?: string;
-    /** 工作地 */
-    workPlace?: string;
+    /** 领英 */
+    linkdin?: string;
     /** 职位 */
     positionTitle?: string;
   };
@@ -64,12 +64,16 @@ export type ResumeConfig = {
   projectList?: Array<{
     /** 项目名称 */
     project_name: string;
+    company_name: string;
     /** 担任角色 */
     project_role: string;
+    time_range: string;
     /** 描述 */
     project_desc?: string;
     /** 项目内容，负责内容 */
     project_content?: string;
+    /** 技术栈 */
+    technical_line?: string;
     /** 项目时间 */
     project_time?: string;
   }>;
@@ -77,12 +81,16 @@ export type ResumeConfig = {
   projectList1?: Array<{
     /** 项目名称 */
     project_name: string;
+    company_name: string;
     /** 担任角色 */
     project_role: string;
+    time_range: string;
     /** 描述 */
     project_desc?: string;
     /** 项目内容，负责内容 */
     project_content?: string;
+    /** 技术栈 */
+    technical_line?: string;
     /** 项目时间 */
     project_time?: string;
   }>;

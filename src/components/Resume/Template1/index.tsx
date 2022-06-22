@@ -4,12 +4,12 @@ import {
   MobileFilled,
   MailFilled,
   GithubFilled,
-  ZhihuCircleFilled,
+  WechatFilled,
   TrophyFilled,
   CheckCircleFilled,
   ScheduleFilled,
   CrownFilled,
-  EnvironmentFilled,
+  LinkedinFilled,
   HeartFilled,
   AreaChartOutlined,
 } from '@ant-design/icons';
@@ -82,7 +82,9 @@ export const Template1: React.FC<Props> = props => {
         {/* 头像 */}
         {!value?.avatar?.hidden && (
           <Avatar
-            avatarSrc={value?.avatar?.src}
+            avatarSrc={
+              'https://avatars.githubusercontent.com/u/7689355?s=96&v=4'
+            }
             className="avatar"
             shape={value?.avatar?.shape}
             size={value?.avatar?.size}
@@ -140,13 +142,11 @@ export const Template1: React.FC<Props> = props => {
                 </span>
               </div>
             )}
-            {profile?.workPlace && (
+            {profile?.linkdin && (
               <div className="work-place">
-                <EnvironmentFilled
-                  style={{ color: theme.color, opacity: 0.85 }}
-                />
+                <LinkedinFilled style={{ color: theme.color, opacity: 0.85 }} />
                 <span>
-                  {i18n.get('工作地')}: {profile.workPlace}
+                  {i18n.get('领英')}: {profile.linkdin}
                 </span>
               </div>
             )}
@@ -162,7 +162,6 @@ export const Template1: React.FC<Props> = props => {
         </div>
         <div></div>
         <div></div>
-        <div></div>
         {/* 自我介绍 */}
         {!!_.trim(_.join(aboutme, '')) && (
           <section className="section section-aboutme">
@@ -174,7 +173,6 @@ export const Template1: React.FC<Props> = props => {
             ))}
           </section>
         )}
-        <div></div>
         <div></div>
         <div></div>
         {/* 教育背景 */}
@@ -232,7 +230,6 @@ export const Template1: React.FC<Props> = props => {
         ) : null}
         <div></div>
         <div></div>
-        <div></div>
         {/* 专业技能 */}
         {skillList?.length ? (
           <section className="section section-skill">
@@ -275,7 +272,6 @@ export const Template1: React.FC<Props> = props => {
         ) : null}
         <div></div>
         <div></div>
-        <div></div>
         {/* 更多信息 */}
         {awardList?.length ? (
           <section className="section section-award">
@@ -285,7 +281,7 @@ export const Template1: React.FC<Props> = props => {
             {awardList.map((award, idx) => {
               return (
                 <div key={idx.toString()}>
-                  <TrophyFilled
+                  <WechatFilled
                     style={{ color: '#ffc107', marginRight: '8px' }}
                   />
                   <b className="info-name">{award.award_info}</b>
@@ -343,6 +339,10 @@ export const Template1: React.FC<Props> = props => {
                   project ? (
                     <div className="section-item" key={idx.toString()}>
                       <div className="section-info">
+                        <b className="info-name">{project.company_name}</b>
+                        {project.time_range}
+                      </div>
+                      <div className="section-info">
                         <b className="info-name">
                           {project.project_name}
                           {/* <span className="info-time">
@@ -356,12 +356,15 @@ export const Template1: React.FC<Props> = props => {
                         )}
                       </div>
                       <div className="section-detail">
-                        <b>{i18n.get('项目描述')}：</b>
                         <span>{project.project_desc}</span>
                       </div>
                       <div className="section-detail">
                         <b>{i18n.get('主要工作')}：</b>
                         <span>{project.project_content}</span>
+                      </div>
+                      <div className="section-detail">
+                        <b>{i18n.get('技术栈')}：</b>
+                        <span>{project.technical_line}</span>
                       </div>
                     </div>
                   ) : null

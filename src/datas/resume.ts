@@ -13,7 +13,7 @@ export const RESUME_INFO: ResumeConfig = {
     github: 'https://github.com/tiancai110a',
     leetcode: 'https://leetcode.com/people/tiancai110a',
     workExpYear: '',
-    workPlace: '浙江杭州',
+    linkdin: '浙江杭州',
     positionTitle: '前端工程师',
   },
   educationList: [

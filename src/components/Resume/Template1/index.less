@@ -95,7 +95,7 @@
   // 非通用，skill
   .basic-info .section-skill {
     .skill-rate {
-      font-size: 14px;
+      font-size: 18px;
 
       .ant-rate-star {
         margin-right: 4px;
@@ -138,6 +138,7 @@
 
   // main-info 内容样式
   .main-info section {
+    white-space:pre-wrap;
     margin-bottom: 48px;
 
     .section-header {
@@ -175,15 +176,13 @@
 
     .section-detail {
       letter-spacing: 1.2px;
-
-      &:not(:first-of-type) {
-        margin-top: 4px;
-      }
+      white-space:pre-wrap;
+      word-wrap : break-word;
     }
 
     .section-info {
       letter-spacing: 1.2px;
-
+      white-space:pre-wrap;
       &:not(:first-of-type) {
         margin-top: 4px;
       }

@@ -42,6 +42,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "clean": "gatsby clean",
     "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "copy": "python build.py",
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
